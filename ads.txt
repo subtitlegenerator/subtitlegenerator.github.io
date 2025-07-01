@@ -1,0 +1,4 @@
+# ads.txt for Subtitle Generator
+# Replace the publisher ID below with your own if you use Google AdSense
+
+google.com, pub-7763536070758321, DIRECT, f08c47fec0942fa0

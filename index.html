@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-7763536070758321">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtitle Generator – Free Online Subtitle Video Maker with Green Screen</title>
+    <meta name="description" content="Create beautiful, downloadable subtitle videos with green screen backgrounds. Upload SRT or type your script. Free, fast, and privacy-friendly.">
+    <meta name="keywords" content="free subtitle generator, green screen subtitles, SRT to video, subtitle video maker,free online subtitle, caption generator, chroma key subtitles, download subtitles, subtitle editor, free YouTube shorts subtitles">
+    <link rel="canonical" href="https://subtitlegenerator.github.io/index.html">
+    <meta property="og:title" content="Subtitle Generator – Free Online Subtitle Video Maker with Green Screen">
+    <meta property="og:description" content="Create beautiful, downloadable subtitle videos with green screen backgrounds. Upload SRT or type your script. Free, fast, and privacy-friendly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://subtitlegenerator.github.io/index.html">
+    <meta property="og:image" content="https://subtitlegenerator.github.io/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Subtitle Generator – Free Online Subtitle Video Maker with Green Screen">
+    <meta name="twitter:description" content="Create beautiful, downloadable subtitle videos with green screen backgrounds. Upload SRT or type your script. Free, fast, and privacy-friendly.">
+    <meta name="twitter:image" content="https://subtitlegenerator.github.io/logo.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7763536070758321"
+     crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Subtitle Generator",
+      "image": "https://subtitlegenerator.github.io/logo.png",
+      "url": "https://subtitlegenerator.github.io/index.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "description": "Create beautiful, downloadable subtitle videos with green screen backgrounds. Upload SRT or type your script. Free, fast, and privacy-friendly.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <nav class="modern-navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="logo.png" alt="Subtitle Generator Logo" style="height:2.2rem;width:2.2rem;vertical-align:middle;margin-right:10px;" />
+                <span class="navbar-title">Subtitle Generator</span>
+            </a>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+    <div class="modern-container">
+        <header class="modern-header">
+            <div class="modern-logo">
+                <img src="logo.png" alt="Subtitle Generator – Free Online Subtitle Video Maker with Green Screen" style="height: 3.5rem; width: 3.5rem; vertical-align: middle; box-shadow: 0 2px 8px rgba(102,126,234,0.10);" />
+                <h1>Subtitle Generator</h1>
+            </div>
+            <p class="modern-subtitle">Create beautiful, downloadable subtitle videos with green screen backgrounds.</p>
+        </header>
+
+        <main class="modern-main">
+            <section class="modern-form-section">
+                <form id="subtitleForm" class="modern-form">
+                    <div class="modern-switcher">
+                        <button type="button" class="switch-btn active" id="switchScript"><i class="fas fa-file-alt"></i> Script/Text</button>
+                        <button type="button" class="switch-btn" id="switchSrt"><i class="fas fa-file-import"></i> Upload SRT</button>
+                    </div>
+
+                    <div id="scriptInput" class="modern-input-section">
+                        <label for="content" class="modern-label">Script/Text Content</label>
+                        <textarea id="content" name="content" class="modern-textarea" placeholder="Enter your script or text content here..."></textarea>
+                    </div>
+
+                    <div id="srtInput" class="modern-input-section" style="display: none;">
+                        <label for="srtFile" class="modern-label">Upload SRT File
+                            <span class="srt-help-icon" tabindex="0">?
+                                <span class="srt-tooltip">
+                                    <strong>What is an SRT file?</strong><br>
+                                    An <b>SRT</b> (SubRip Subtitle) file is a plain text file containing subtitles and their timing information. It looks like:
+                                    <pre style="font-size:0.9em; margin:6px 0; background:#f8f8f8; padding:6px; border-radius:6px;">1
+00:00:01,000 --> 00:00:03,000
+Hello, world!
+
+2
+00:00:03,500 --> 00:00:05,000
+This is a subtitle example.</pre>
+                                    <b>How to get one?</b><br>
+                                    - Use YouTube's "Download subtitles" feature<br>
+                                    - Use online tools (search "audio to SRT" or "video to SRT")<br>
+                                    - Or create/edit in a text editor
+                                </span>
+                            </span>
+                        </label>
+                        <div class="file-upload">
+                            <input type="file" id="srtFile" name="srtFile" accept=".srt" />
+                            <div class="upload-area">
+                                <i class="fas fa-file-import"></i>
+                                <p>Click to upload or drag & drop</p>
+                                <span>Supports SRT subtitle files</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modern-options-row">
+                        <div class="modern-option-group">
+                            <label for="subtitleFont" class="modern-label">Font</label>
+                            <select id="subtitleFont" name="subtitleFont" class="modern-select">
+                                <option value="Inter">Inter</option>
+                                <option value="Arial" selected>Arial</option>
+                                <option value="Roboto">Roboto</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Comic Sans MS">Comic Sans MS</option>
+                            </select>
+                        </div>
+                        <div class="modern-option-group">
+                            <label for="subtitleColor" class="modern-label">Subtitle Color</label>
+                            <select id="subtitleColor" name="subtitleColor" class="modern-select">
+                                <option value="#ffffff" selected>White</option>
+                                <option value="#ffff00">Yellow</option>
+                                <option value="#000000">Black</option>
+                                <option value="#ff0000">Red</option>
+                                <option value="#0074d9">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="modern-option-group">
+                        <label for="fontSize" class="modern-label">Font Size</label>
+                        <select id="fontSize" name="fontSize" class="modern-select">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extra-large">Extra Large</option>
+                        </select>
+                    </div>
+
+                    <div class="modern-option-group">
+                        <label class="modern-label">Subtitle Options</label>
+                        <div class="modern-checkbox-row">
+                            <label class="modern-checkbox">
+                                <input type="checkbox" id="highlightKeywords" name="highlightKeywords" checked>
+                                <span class="checkmark"></span>
+                                Highlight keywords
+                            </label>
+                            <label class="modern-checkbox">
+                                <input type="checkbox" id="animatedText" name="animatedText">
+                                <span class="checkmark"></span>
+                                Animated text effects
+                            </label>
+                            <label class="modern-checkbox">
+                                <input type="checkbox" id="wordByWord" name="wordByWord" checked disabled style="display:none;">
+                                <span class="checkmark" style="display:none;"></span>
+                                <!-- Hidden for now -->
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="modern-option-group">
+                        <label class="modern-label">Background Color</label>
+                        <div class="modern-color-row">
+                            <label class="color-option">
+                                <input type="radio" name="backgroundColor" value="green" checked>
+                                <span class="color-swatch" style="background: #00ff00;"></span>
+                                Green Screen
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="backgroundColor" value="blue">
+                                <span class="color-swatch" style="background: #0000ff;"></span>
+                                Blue Screen
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="backgroundColor" value="black">
+                                <span class="color-swatch" style="background: #000000;"></span>
+                                Black
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="modern-generate-btn">
+                        <i class="fas fa-closed-captioning"></i>
+                        Generate Subtitles
+                    </button>
+                </form>
+            </section>
+
+            <section class="modern-preview-section">
+                <h2 class="modern-preview-title">Subtitle Preview</h2>
+                <div class="modern-preview-canvas">
+                    <div id="subtitleCanvas" class="subtitle-canvas">
+                        <div class="placeholder">
+                            <i class="fas fa-closed-captioning"></i>
+                            <p>Your subtitles will appear here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modern-controls">
+                    <button id="playBtn" class="modern-control-btn" disabled title="Play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="pauseBtn" class="modern-control-btn" disabled title="Pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button id="downloadBtn" class="modern-control-btn" disabled title="Download Video">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button id="downloadSrtBtn" class="modern-control-btn" disabled title="Download SRT">
+                        <i class="fas fa-file-text"></i>
+                    </button>
+                </div>
+                <div class="modern-progress-container">
+                    <div class="modern-progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <span id="progressText">0%</span>
+                </div>
+                <details class="modern-help-details">
+                    <summary><i class="fas fa-info-circle"></i> How to convert WebM to MP4?</summary>
+                    <div class="modern-help-content">
+                        <strong>Browsers can only export <b>WebM</b> video.</strong> To convert to MP4:
+                        <ul>
+                            <li>Use <a href="https://handbrake.fr/" target="_blank">HandBrake</a> (free, Windows/Mac/Linux)</li>
+                            <li>Or <a href="https://www.videolan.org/vlc/" target="_blank">VLC</a> (free, Windows/Mac/Linux)</li>
+                            <li>Or an <a href="https://cloudconvert.com/webm-to-mp4" target="_blank">online converter</a></li>
+                            <li>Or with ffmpeg:<br><code>ffmpeg -i input.webm -c:v libx264 -crf 23 -preset veryfast output.mp4</code></li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+        </main>
+
+        <section class="modern-about">
+            <div class="about-container" style="max-width: 900px; margin: 32px auto 0 auto; background: #fff; border-radius: 14px; box-shadow: 0 4px 24px rgba(102,126,234,0.08); padding: 32px 28px;">
+                <h2 style="font-size:1.6rem; color:#667eea; margin-bottom:10px;">What is Subtitle Generator?</h2>
+                <p style="font-size:1.13rem; color:#333; margin-bottom:18px;">Subtitle Generator is a <strong>free online tool</strong> that lets you create professional subtitle videos with green screen, blue screen, or black backgrounds—directly in your browser. No downloads, no watermarks, and no sign-up required. Perfect for YouTube Shorts, TikTok, Reels, and any video editor that supports chroma keying. All processing is done locally for maximum privacy and speed.</p>
+                <h2 style="font-size:1.18rem; color:#333; margin-bottom:8px;">How does it work? (Step-by-step guide)</h2>
+                <ol style="font-size:1.08rem; color:#444; margin-left:20px; margin-bottom:0;">
+                    <li><strong>Enter your script</strong> in the text box, or <strong>upload an SRT file</strong> with your subtitles and timings.</li>
+                    <li><strong>Choose your font, subtitle color, and background color</strong> (green, blue, or black screen).</li>
+                    <li>(Optional) Enable <strong>animated text effects</strong> or <strong>keyword highlighting</strong> for extra impact.</li>
+                    <li>Click <strong>Generate Subtitles</strong> to instantly preview your video.</li>
+                    <li><strong>Download</strong> your subtitle video (WebM, perfect for editing) or export the SRT file for use elsewhere.</li>
+                </ol>
+                <p style="margin-top:18px; color:#555; font-size:1.05rem;">Subtitle Generator is <strong>100% free</strong> to use. There are no hidden costs, no watermarks, and your data never leaves your device. Start creating eye-catching subtitles for your videos in seconds!</p>
+            </div>
+        </section>
+
+        <section class="modern-faq">
+            <div class="faq-container">
+                <h2 class="faq-title"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>What is Subtitle Generator?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Subtitle Generator is a <strong>free, browser-based tool</strong> that lets you create professional subtitle videos with green, blue, or black backgrounds for use in any video editor. You can type your script or upload an SRT file, customize the font and color, and instantly preview and download your subtitles as a video or SRT file. There are no downloads, no watermarks, and no sign-up required. Everything runs locally in your browser for privacy and speed.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>Is Subtitle Generator really free?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes! Subtitle Generator is <strong>completely free</strong> to use. There are no hidden costs, no watermarks on your videos, and you don't need to create an account. The tool is supported by minimal ads and is designed to be accessible to everyone, from content creators to educators and businesses.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>How do I use Subtitle Generator?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            1. <strong>Enter your script</strong> in the text box, or <strong>upload an SRT file</strong> with your subtitles and timings.<br>
+                            2. <strong>Choose your font, subtitle color, and background color</strong> (green, blue, or black screen).<br>
+                            3. (Optional) Enable <strong>animated text effects</strong> or <strong>keyword highlighting</strong> for extra impact.<br>
+                            4. Click <strong>Generate Subtitles</strong> to instantly preview your video.<br>
+                            5. <strong>Download</strong> your subtitle video (WebM, perfect for editing) or export the SRT file for use elsewhere.<br><br>
+                            You can use the generated video in any editor that supports chroma keying (green/blue screen), such as Adobe Premiere, Final Cut, CapCut, or DaVinci Resolve.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>What subtitle formats are supported?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Subtitle Generator supports two input methods:<br>
+                            <ul>
+                                <li><strong>Script/Text:</strong> Type or paste your script, and the tool will automatically split it into subtitle segments and generate timings for you.</li>
+                                <li><strong>SRT File:</strong> Upload a standard SRT (SubRip Subtitle) file with your own timings and text. The tool will use your exact timings for the video.</li>
+                            </ul>
+                            You can also download your subtitles as an SRT file for use in other platforms or editors.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>Can I use the videos in my YouTube Shorts, TikTok, or Reels?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Absolutely! The subtitle videos you create are perfect for YouTube Shorts, TikTok, Instagram Reels, and any other platform that supports video uploads. The green/blue/black screen backgrounds make it easy to use chroma key (color key) effects in your favorite video editor, so you can overlay the subtitles on any video. There are no watermarks, and you have full control over the style and timing.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>How do I convert the downloaded WebM video to MP4?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Browsers can only export video as WebM format. To convert your subtitle video to MP4, you can use free tools like <a href="https://handbrake.fr/" target="_blank" rel="noopener">HandBrake</a>, <a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener">VLC</a>, or online converters. For advanced users, <code>ffmpeg</code> can also be used:<br>
+                            <code>ffmpeg -i input.webm -c:v libx264 -crf 23 -preset veryfast output.mp4</code><br>
+                            See the help section on the homepage for more details and step-by-step instructions.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>Is my data private?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes, your privacy is a top priority. All subtitle processing is done locally in your browser—your script, SRT files, and generated videos never leave your device. No subtitle data is uploaded or stored on any server. The only data collected is anonymous usage statistics via Google Analytics, which helps us improve the site. See our <a href="privacy.html">Privacy Policy</a> for full details.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>Why is there no audio in the downloaded video?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            For privacy and browser compatibility, Subtitle Generator only exports the subtitle animation as a video (WebM) without audio. This ensures your audio files are never uploaded or processed. You can easily add your own audio track in any video editor after downloading the subtitle video.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false"><span>Something isn't working—what should I do?</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            If you encounter any issues:
+                            <ul>
+                                <li>Try refreshing the page or clearing your browser cache.</li>
+                                <li>Use a modern browser like Chrome, Firefox, or Edge.</li>
+                                <li>Check your browser's JavaScript console for errors.</li>
+                                <li>If the problem persists, open an issue on our <a href="https://github.com/subtitlegenerator/subtitlegenerator.github.io" target="_blank" rel="noopener">GitHub repository</a> with details and screenshots if possible.</li>
+                            </ul>
+                            We're always working to improve the tool and appreciate your feedback!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modern-features">
+            <h2>Features</h2>
+            <div class="modern-features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Script or SRT</h3>
+                    <p>Generate subtitles from your own text or upload an SRT file.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Green Screen</h3>
+                    <p>Perfect for video editing with chroma key backgrounds.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Animated Effects</h3>
+                    <p>Pop-up and highlight effects for engaging subtitles.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Download Video & SRT</h3>
+                    <p>Export as WebM video or SRT subtitle file.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="modern-footer">
+            <span>
+                <a href="terms.html">Terms of Use</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a>
+                <span style="margin-left:18px;">Made with <i class="fas fa-heart"></i> for creators</span>
+            </span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
