@@ -269,7 +269,7 @@ class SubtitleGenerator {
     }
 
     drawBackground(ctx, width, height) {
-        // If background color options exist, use them; otherwise default to green
+        // If background color options exist, use them; otherwise default to green test
         let backgroundColor = 'green';
         const bgRadio = document.querySelector('input[name="backgroundColor"]:checked');
         if (bgRadio) backgroundColor = bgRadio.value;
