@@ -273,7 +273,7 @@ class SubtitleGenerator {
         let backgroundColor = 'green';
         const bgRadio = document.querySelector('input[name="backgroundColor"]:checked');
         if (bgRadio) backgroundColor = bgRadio.value;
-        switch (backgroundColor) {
+        switch (backgroundColor) {  
             case 'green': ctx.fillStyle = '#00ff00'; break;
             case 'blue': ctx.fillStyle = '#0000ff'; break;
             case 'black': ctx.fillStyle = '#000000'; break;
