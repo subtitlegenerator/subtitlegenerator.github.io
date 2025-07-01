@@ -13,10 +13,11 @@ body {
     margin: 0;
 }
 
-.modern-container {
+.modern-container {  
     max-width: 1200px;
     margin: 0 auto;
     padding: 32px 16px 0 16px;
+    padding-top: 0px;
 }
 
 .modern-header {
@@ -638,11 +639,6 @@ body {
         gap: 14px;
         margin-top: 6px;
     }
-}
-
-/* Add spacing below navbar for content */
-.modern-container {
-    margin-top: 40px;
 }
 
 /* Modern FAQ Styles */
